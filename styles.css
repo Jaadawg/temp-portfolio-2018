@@ -1,0 +1,97 @@
+@import url("https://use.typekit.net/aut2dvn.css");
+
+html {
+  background: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "futura-pt-bold",sans-serif;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.logo-rotate {
+  position: fixed;
+  transform: rotate(90deg);
+  top: 8rem;
+  left: -5rem;
+}
+
+.logo {
+  width: 100%;
+}
+
+.img-main {
+  width: 40%;
+  height: auto;
+}
+
+.image {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu--dustu .menu__item {
+	font-family: "futura-pt-bold",sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: 3rem 0;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+}
+
+.menu--dustu .menu__item-name {
+	font-size: 1.75rem;
+	font-weight: bold;
+	overflow: hidden;
+	padding: 0 0.25rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.menu--dustu .menu__item-label {
+	font-family: "futura-pt-bold",sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.05rem;
+	font-size: 0.8rem;
+	margin: 0.5rem 0 0 0;
+	margin-top: 0rem;
+	padding: 0 0.5rem;
+	color: #565656;
+	transition: color 0.4s;
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.menu--dustu .menu__item:hover .menu__item-label {
+	color: #ff5974;
+}
+
+@media all and (max-width: 700px){
+  .img-main {
+    width: 60%;
+    height: auto;
+  }
+
+  .logo-rotate {
+    position: fixed;
+    transform: rotate(90deg);
+    top: 8rem;
+    left: -6rem;
+  }
+
+  .logo {
+    width: 80%;
+  }
+}
